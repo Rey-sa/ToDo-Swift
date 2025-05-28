@@ -5,7 +5,7 @@ struct ToDoListDemoTests {
 
     @Test func testNonEmptyAssertions() throws {
            // let title: String? = "Sport"
-            let emptyString: String? = ""
+           // let emptyString: String? = ""
             let nilString: String? = nil
 
             // Expected no crashs

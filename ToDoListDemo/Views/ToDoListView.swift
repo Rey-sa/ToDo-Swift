@@ -3,7 +3,7 @@ import SwiftData
 
 struct ToDoListView: View {
     @Environment(\.modelContext) private var context
-    @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.colorScheme) private var colorScheme //Dark-Light
     
     //Type Inference not possible due to Query
     @Query private var items: [ToDoItem]
@@ -65,11 +65,17 @@ struct ToDoListView: View {
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
+   
+    //Showcase Parameter Labeling
     
-    func addItem(taskTitle title: String){
+    /*
+    func addItem(taskTitle title: String, testLabel number: Int){
         let newItem = ToDoItem(title: title)
         context.insert(newItem)
     }
+     */
+     
+     
     
     //Deletes items from data store based on the indices selected by user
     func deleteItems(at offsets: IndexSet){

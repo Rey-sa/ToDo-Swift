@@ -8,7 +8,7 @@ struct ToDoDemoApp: App {
             ToDoListView()
         }
         //SwiftData setup
-        .modelContainer(for: ToDoItem.self)
+        .modelContainer(for: ToDoItem.self) //Uses ToDoItem as Datamodel
     }
 }
 
